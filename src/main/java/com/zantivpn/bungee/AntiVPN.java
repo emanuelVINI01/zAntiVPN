@@ -47,7 +47,7 @@ public class AntiVPN implements Listener {
         }
 		try{
 			isProxy = ProxyDetector.detectProxy(ip);
-		}catch(Exception e){
+		}catch(Exception e2){
 			isProxy = false;
 		}
         Main.main.config.set("cache."+ip+".vpn",isHostingorVPN || isProxy);
