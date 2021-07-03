@@ -1,0 +1,23 @@
+#Não mexa aqui, e a versão da configuração.
+versao: 1.2
+#IPs que podem entrar mesmo sendo VPN.
+ipswhitelist:
+  - "8.8.8.8"
+  - "1.1.1.1"
+#Mensagem quando o jogador e detectado de VPN
+vpnkick:
+  - "§c§lTURKCRAFT"
+  - "§co IP §c§l%ip%§r§c está banido de acessar nosso servidor! Pois ele e uma VPN / Proxy."
+  - "§cCaso ache que isso foi um erro acesse https://discord.gg/FJatBSTCpb para saber mais."
+#Banir a pessoa?
+ban: false
+#Motivo do banimento se estiver ativado
+motivo: "Uso de VPN"
+#Duração
+duracao: 30
+#Comando para ban (Isso não funciona para bungeecord)
+comando: ban %player% %duracao%m %motivo%
+#Não mexa, isso e o cache para otimizar o plugin
+cache:
+  0.0.0.0:
+    vpn: false
